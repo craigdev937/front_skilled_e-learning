@@ -1,7 +1,59 @@
-body {
-    background-color: steelblue;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --pink: hsl(341, 100%, 83%);
+    --rose: hsl(341, 92%, 62%);
+    --gray: hsl(232, 10%, 56%);
+    --blue: hsl(234, 25%, 52%);
+    --dark: hsl(233, 54%, 16%);
+    --grade1:hsl(322, 87%, 55%);
+    --grade2: hsl(13, 100%, 64%);
+    --mix1: hsl(322, 87%, 55%);
+    --mix2: hsl(237, 100%, 64%);
+    --main: linear-gradient(
+        to bottom, 
+        var(--grade1), 
+        var(--grade2)
+    );
+    --alt: linear-gradient(
+        to bottom,
+        var(--mix1),
+        var(--mix2)
+    );
 }
 
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background: var(--white);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: grid;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__text {
+    color: var(--dark);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.header__button {
+    background: var(--dark);
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 20px;
+    border-radius: 50px;
+}
 
 
